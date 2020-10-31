@@ -1,0 +1,40 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.background {
+  height: 100vh;
+  background-color: #0c122c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav {
+  background-color: #1d2c67;
+  padding: 20px;
+  max-width: 300px;
+  border-radius: 7px 80px 7px 7px;
+}
+
+.nav .logo {
+  padding: 10px;
+}
+
+.nav .buttons {
+  padding: 10px;
+}
+
+.nav .buttons img {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #0c122c;
+  margin-right: 10px;
+}
+/*# sourceMappingURL=style.css.map */

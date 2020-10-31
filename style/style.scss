@@ -1,0 +1,36 @@
+$paleBlue: hsl(243, 100%, 93%);
+$darkBlue: hsl(228, 56%, 26%);
+$veryDarkBlue: hsl(229, 57%, 11%);
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.background {
+  height: 100vh;
+  background-color: $veryDarkBlue;
+  //   background-image: url(/images/bg-desktop.png) no-repeat;
+  display: flex;
+  justify-content: center;
+}
+
+.nav {
+  background-color: $darkBlue;
+  padding: 20px;
+  max-width: 300px;
+  border-radius: 7px 80px 7px 7px;
+  .logo {
+    padding: 10px;
+  }
+  .buttons {
+    padding: 10px;
+    img {
+      padding: 10px;
+      border-radius: 10px;
+      background-color: $veryDarkBlue;
+      margin-right: 10px;
+    }
+  }
+}
