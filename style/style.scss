@@ -8,18 +8,32 @@ $veryDarkBlue: hsl(229, 57%, 11%);
   margin: 0;
 }
 
-.background {
+.container {
   height: 100vh;
-  background-color: $veryDarkBlue;
-  //   background-image: url(/images/bg-desktop.png) no-repeat;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: $veryDarkBlue;
+  z-index: -2;
+  .bg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+  }
 }
 
 .nav {
   background-color: $darkBlue;
   padding: 20px;
-  max-width: 300px;
+  min-width: 320px;
   border-radius: 7px 80px 7px 7px;
   .logo {
     padding: 10px;
@@ -27,10 +41,24 @@ $veryDarkBlue: hsl(229, 57%, 11%);
   .buttons {
     padding: 10px;
     img {
+      cursor: pointer;
       padding: 10px;
+      max-width: 40px;
+      max-height: 40px;
       border-radius: 10px;
       background-color: $veryDarkBlue;
-      margin-right: 10px;
+      margin-right: 5px;
     }
+  }
+}
+
+.usage {
+  background-color: $darkBlue;
+  border-radius: 10px;
+  padding: 20px;
+  margin-left: 20px;
+  .bar {
+    background-color: $darkBlue;
+    padding: 5px;
   }
 }
