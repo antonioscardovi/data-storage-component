@@ -61,13 +61,34 @@
 
 .usage {
   background-color: #1d2c67;
+  color: #848794;
   border-radius: 10px;
+  min-width: 480px;
   padding: 20px;
   margin-left: 20px;
+  margin-top: 44px;
+}
+
+.usage .gb-left {
+  position: absolute;
+  padding: 12px;
+  right: 34%;
+  top: 45%;
+  background-color: #fff;
+}
+
+.usage .gb-left::after {
+  background-color: #fff;
 }
 
 .usage .bar {
   background-color: #1d2c67;
+  padding: 6px;
+}
+
+.usage .bar .progress {
   padding: 5px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffa399), to(#ff4d97));
+  background: linear-gradient(#ffa399, #ff4d97);
 }
 /*# sourceMappingURL=style.css.map */

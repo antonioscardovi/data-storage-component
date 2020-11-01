@@ -1,4 +1,5 @@
 $paleBlue: hsl(243, 100%, 93%);
+$grayishBlue: hsl(229, 7%, 55%);
 $darkBlue: hsl(228, 56%, 26%);
 $veryDarkBlue: hsl(229, 57%, 11%);
 
@@ -54,11 +55,28 @@ $veryDarkBlue: hsl(229, 57%, 11%);
 
 .usage {
   background-color: $darkBlue;
+  color: $grayishBlue;
   border-radius: 10px;
+  min-width: 480px;
   padding: 20px;
   margin-left: 20px;
+  margin-top: 44px;
+  .gb-left {
+    position: absolute;
+    padding: 12px;
+    right: 34%;
+    top: 45%;
+    background-color: #fff;
+  }
+  .gb-left::after {
+    background-color: #fff;
+  }
   .bar {
     background-color: $darkBlue;
-    padding: 5px;
+    padding: 6px;
+    .progress {
+      padding: 5px;
+      background: linear-gradient(hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    }
   }
 }
