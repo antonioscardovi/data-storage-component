@@ -58,25 +58,43 @@ $veryDarkBlue: hsl(229, 57%, 11%);
   color: $grayishBlue;
   border-radius: 10px;
   min-width: 480px;
-  padding: 20px;
+  padding: 32px;
   margin-left: 20px;
   margin-top: 44px;
+  .usage-text {
+    margin-bottom: 10px;
+  }
+  .gb {
+    color: #fff;
+  }
   .gb-left {
     position: absolute;
     padding: 12px;
     right: 34%;
     top: 45%;
     background-color: #fff;
+    span {
+      color: black;
+    }
   }
   .gb-left::after {
     background-color: #fff;
   }
   .bar {
-    background-color: $darkBlue;
-    padding: 6px;
+    background-color: $veryDarkBlue;
+    padding: 2px;
+    border-radius: 10px;
     .progress {
       padding: 5px;
+      border-radius: 10px;
       background: linear-gradient(hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    }
+  }
+  .range {
+    display: flex;
+    .gb2 {
+      color: #fff;
+      margin-left: auto;
     }
   }
 }

@@ -64,9 +64,17 @@
   color: #848794;
   border-radius: 10px;
   min-width: 480px;
-  padding: 20px;
+  padding: 32px;
   margin-left: 20px;
   margin-top: 44px;
+}
+
+.usage .usage-text {
+  margin-bottom: 10px;
+}
+
+.usage .gb {
+  color: #fff;
 }
 
 .usage .gb-left {
@@ -77,18 +85,35 @@
   background-color: #fff;
 }
 
+.usage .gb-left span {
+  color: black;
+}
+
 .usage .gb-left::after {
   background-color: #fff;
 }
 
 .usage .bar {
-  background-color: #1d2c67;
-  padding: 6px;
+  background-color: #0c122c;
+  padding: 2px;
+  border-radius: 10px;
 }
 
 .usage .bar .progress {
   padding: 5px;
+  border-radius: 10px;
   background: -webkit-gradient(linear, left top, left bottom, from(#ffa399), to(#ff4d97));
   background: linear-gradient(#ffa399, #ff4d97);
+}
+
+.usage .range {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.usage .range .gb2 {
+  color: #fff;
+  margin-left: auto;
 }
 /*# sourceMappingURL=style.css.map */
